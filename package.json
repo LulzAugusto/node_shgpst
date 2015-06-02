@@ -1,0 +1,31 @@
+{
+  "name": "node_shgpst",
+  "version": "0.1.0",
+  "description": "Receive a location from Self Hosted GPS Tracker app and post it to Tago API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LulzAugusto/node_shgpst.git"
+  },
+  "keywords": [
+    "android",
+    "self",
+    "hosted",
+    "gps",
+    "tracker",
+    "tago"
+  ],
+  "author": "Luiz A. Crisostomo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LulzAugusto/node_shgpst/issues"
+  },
+  "homepage": "https://github.com/LulzAugusto/node_shgpst#readme",
+  "dependencies": {
+    "express": "^4.12.4",
+    "tago": "^1.1.1"
+  }
+}
