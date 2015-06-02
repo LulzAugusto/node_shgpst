@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
         return;
     }
 
-    var device = new Tago('device', '1c436d50-08b2-11e5-a3be-7910c7e46f45'),
+    var device = new Tago('device', 'ce5868c0-08ed-11e5-937f-d51c9f32e4e9'),
         data = {
             variable: 'location',
             location: req.query.lat + ',' + req.query.lon,
