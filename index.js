@@ -8,13 +8,18 @@ app.get('/', function (req, res) {
         return;
     }
 
-    var device = new Tago('Moto X 2nd', '1c436d50-08b2-11e5-a3be-7910c7e46f45');
-    device.insert({
-        variable: 'location',
-        location: req.query.lat + ',' + req.query.lon,
-        time: new Date(),
-        value: 0
-    });
+    var device = new Tago('Moto X 2nd', '1c436d50-08b2-11e5-a3be-7910c7e46f45'),
+        data = {
+            variable: 'location',
+            location: req.query.lat + ',' + req.query.lon,
+            time: new Date(),
+            value: 0
+        };
+
+    device.insert(data);
+
+    console.log('Data inserted:');
+    console.log(data);
     res.sendStatus(200);
 });
 
